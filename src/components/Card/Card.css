@@ -9,14 +9,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    
 }
 .Cards{
     padding-top: 6rem;
-    display: grid;
-    gap:1rem;
-    grid-template-columns: repeat(3,1fr);
-}
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
 .Card{
     display: flex;
     flex-direction: column;
@@ -41,21 +44,29 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .Description{
-    padding: 3rem 1rem;
-    font-size: 1.2rem;
+    margin-top: 7rem;
+    font-size: 1.5rem;
     text-align: center;
-    padding-top: 2rem;
+    padding:2rem 4rem;
+    background: white;
+    border-radius: 30px;
+    width: 50%;
+    height: 100%;
 }
 .Description h2{
-    padding-bottom: 3rem;
+    
+    padding-bottom: 4rem;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .Previous{
     text-decoration:line-through;
     font-family:sans-serif;
+    margin-top: 2rem;
 }
 .Price{
     font-size: 1.6rem;
-    padding-bottom: 1rem;
+    padding: .1rem;
 }
 .Boton-Agregar{
     background: green;
@@ -69,4 +80,8 @@
     background: white;
     transition: 1s;
     border-color: rgb(213, 204, 204);
+}
+.Stock{
+    padding-top:2rem;
+    text-decoration:underline;
 }
